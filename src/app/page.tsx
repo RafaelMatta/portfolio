@@ -2,8 +2,9 @@ import Navbar from "@/app/ui/navbar/navbar";
 import Image from "next/image";
 import { socialMedia } from "@/app/lib/placeholder-data";
 import SocialMedia from "@/app/ui/socialmedia";
-import { arimoBold } from "./ui/fonts";
 import Link from "next/link";
+import Topic from "@/app/ui/about/topic";
+import { PrimaryButton } from "./ui/buttons";
 
 export default function Page() {
   return (
@@ -35,6 +36,32 @@ export default function Page() {
           />
         </div>
       </main>
+      <section className="py-20 bg-zinc-800">
+        <div className="container mx-auto bg-white rounded-lg overflow-hidden flex flex-row gap-16">
+          <div className="w-3/5 py-16 pl-8 flex flex-col">
+            <h1 className="font-bold text-4xl mb-4">{`{ Hi there! Rafael here }`}</h1>
+            <p className="mb-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              auctor lorem orci, quis bibendum leo facilisis eu. Praesent mattis
+              arcu sit amet neque auctor, et pulvinar quam maximus. Mauris
+              lectus eros, molestie a convallis quis, congue et nibh. Dolor sit
+              amet, consectetur adipiscing elit. Aliquam auctor lorem orci,
+              raesent mattis arcu sit amet neque auctor, et pulvinar quam
+              maximus
+            </p>
+            <div className="flex flex-wrap flex-col gap-1 h-20 mb-16">
+              <Topic label="age">23</Topic>
+              <Topic label="Adress">Brazil, São Paulo</Topic>
+              <Topic label="e-mail">rafaelbbmatta@gmail.com</Topic>
+              <Topic label="phone">{`+55 (11) 98857-2134`}</Topic>
+            </div>
+            <PrimaryButton link="#">Contact</PrimaryButton>
+          </div>
+          <div className="bg-zinc-400 w-2/5">
+            <Image src="/images/perfil" alt="Rafael Matta" fill />
+          </div>
+        </div>
+      </section>
     </>
   );
 }

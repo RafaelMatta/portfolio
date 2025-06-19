@@ -1,6 +1,6 @@
 import RMLogo from "@/app/ui/rm-logo";
 import Link from "next/link";
-import { arimoBold } from "@/app/ui/fonts";
+import { arimo } from "@/app/ui/fonts";
 import NavLink from "@/app/ui/navbar/navlink";
 
 export default function Navbar() {
@@ -8,7 +8,7 @@ export default function Navbar() {
     <div className="container mb-4 mx-auto p-4 bg-zinc-800 rounded-full text-white flex flex-row justify-between">
       <RMLogo />
       <ul
-        className={`${arimoBold.className} flex flex-row justify-between items-center`}
+        className={`${arimo.className} font-bold flex flex-row justify-between items-center`}
       >
         <li>
           <NavLink link="#" label="Home" />

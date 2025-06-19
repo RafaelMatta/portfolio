@@ -1,6 +1,5 @@
 import "@/app/ui/global.css";
-import Navbar from "@/app/ui/navbar/navbar";
-import { arimoRegular } from "@/app/ui/fonts";
+import { arimo } from "@/app/ui/fonts";
 
 export default function RootLayout({
   children,
@@ -10,7 +9,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${arimoRegular.className} antialiased flex flex-col w-full h-screen`}
+        className={`${arimo.className} font-normal antialiased flex flex-col w-full h-screen`}
       >
         {children}
       </body>
